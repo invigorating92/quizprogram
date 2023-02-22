@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Quiz</title>
+</head>
+<body>
+    <h1>퀴즈 만들기 페이지</h1>
+    <form method="post" enctype="multipart/form-data" th:action th:object="${quizDTO}">
+        <input type="text" placeholder="질문을 입력하세요"><br>
+        <input type="text" placeholder="답변을 입력하세요"><br>
+        <input type="file"><br>
+        <button type="submit" th:text="'저장하기'"></button>
+    </form>
+</body>
+</html>

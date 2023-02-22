@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Page</title>
+</head>
+<body>
+    <h1>시작 페이지</h1>
+    <button th:text="'시작하기'" th:onclick="|location.href='@{/quiz/1}'|"></button>
+</body>
+</html>
